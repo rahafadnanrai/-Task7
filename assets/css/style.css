@@ -1,0 +1,25 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:#f4f6f8;
+    direction: ltr;
+    padding:20px;
+    background-image: linear-gradient(to top right , rgb(220, 236, 233), rgba(42, 180, 134, 0.932));
+    
+    background-size: cover;
+}
+.container{max-width:800px;margin:auto}
+
+button{
+    background:#4a6cf7;
+    color:#fff;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+   
+}
+h1{
+    font-style: italic;
+    font-display: swap;
+    background-color: #f4f6f846;
+
+}
