@@ -23,3 +23,14 @@ h1{
     background-color: #f4f6f846;
 
 }
+
+a{
+    background-color: rgba(240, 255, 255, 0.322);
+    font-style: italic;
+   
+}
+
+textarea{
+    height: 30vh;
+    width:30vw;
+}

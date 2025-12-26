@@ -1,21 +1,26 @@
 
-document.getElementById('form').onsubmit = e => {
-  e.preventDefault();
-
+document.getElementById('form').onsubmit = event => {
+  event.preventDefault();
+//
   fetch('https://dummyjson.com/posts/add', {
+    
     method: 'POST',
+    //نخبر السيرفر ان البيانات بصيغة JSON
     headers: { 'Content-Type': 'application/json' },
+    //البيانات المرسلة 
     body: JSON.stringify({
-      title: title.value,
-      body: body.value,
+      title: title.value, //عنوان المنشور 
+      body: body.value,// محتوى المنشور 
       userId: userId.value
     })
   })
-  .then(res => res.json())
+   //تحويل الرد الى JSON 
+  .then(result => result.json())
   .then(data => {
     console.log("post Added",data);
    
     location.href = 'index.html';
-    location.href = '.';
+  
   });
 };
+
