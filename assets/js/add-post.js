@@ -15,7 +15,7 @@ document.getElementById('form').onsubmit = e => {
   .then(data => {
     console.log("post Added",data);
    
-    location.href = 'posts.html';
+    location.href = 'index.html';
     location.href = '.';
   });
 };

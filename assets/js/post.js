@@ -28,6 +28,6 @@ document.getElementById('delete').onclick = () => {
   .then(res => res.json())
   .then(data => {
     console.log(data);
-    location.href = 'posts.html';
+    location.href = 'index.html';
   });
 };
